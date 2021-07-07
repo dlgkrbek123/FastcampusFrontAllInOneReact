@@ -1,0 +1,62 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.header {
+  padding: 9px 16px;
+  border-bottom: 1px solid lightgray;
+}
+.container {
+  width: 980px;
+  margin: auto;
+}
+.container-left {
+  padding: 20px 0px;
+}
+
+.logo {
+  float: left;
+  height: 100%;
+  margin-right: 20px;
+}
+.logo img {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.menu {
+  float: left;
+}
+.menu-item {
+  float: left;
+  line-height: 32px;
+  margin-right: 10px;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.jin {
+  padding: 0px 80px;
+  margin-top: 12px;
+}
+.jin span {
+  font-size: 30px;
+  line-height: 48px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: red;
+  color: white;
+}
+.jin span.male {
+  background: blue;
+}
