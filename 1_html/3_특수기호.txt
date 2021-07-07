@@ -1,0 +1,36 @@
+! : exclamation mark
+@ : At
+# : Number, Sharp
+$ : dollar
+% : percent
+^ : caret
+& : ampersand
+* : asterisk
+
+
+- : hyphen, dash
+_ : underscore, low dash
+
+
+/ : slash
+\ : back slash
+| : vertical bar
+
+
+() : parenthesis
+{} : brace
+[] : bracket
+<> : angle bracket
+
+---------------------------------------------
+
+HTML 엔티티
+- https://www.freeformatter.com/html-entities.html
+- html에 특수기호를 직접 입력하지 않고 기호를 렌더링할 수 있다.
+- 키보드로 직접 입력하면 예상치못한 결과과 나올 수 있다.
+  특수기호를 간접적으로 입력해보자.
+
+&lt;    => "<"
+
+&amp;	or &#38;
+=> &(앰퍼센드)가 입력된다.

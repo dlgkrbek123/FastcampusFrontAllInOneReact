@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    문서의 정보
+  </head>
+  <body>
+    문서의 구조
+  </body>
+</html>
+
+
+DOCTYPE(DTD)
+- 브라우져에서 문서를 어떤 html버전으로 해석할것인가를 지정
+
+
+html문서의 범위를 나타내는 태그들
+- html : 문서의 전체 영역을 설정
+- head : 문서의 정보
+- body : 문서의 구조 (화면에 출력될 요소들)

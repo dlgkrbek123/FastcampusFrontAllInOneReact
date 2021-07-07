@@ -1,0 +1,65 @@
+title
+- 문서의 제목을 지정
+- 탭에서 이름으로 표시
+
+<title>네이버</title>
+
+--------------------------------------------------------
+
+meta 
+- 문서에 관한 정보를 검색엔진과 브라우져에 제공
+- 빈 태그
+
+<meta charset="utf-8" />             
+<meta name="author" content="홍길동" />
+<meta name="description" content="우리 사이트가 최고!" />
+
+<정보 문자인코딩방식="utf-8" />
+<정보 정보종류="사이트제작자" 정보값="홍길동" />
+
+--------------------------------------------------------
+
+link
+- 외부문서를 연결할 떄 사용
+- 빈 태그 
+
+<link rel="stylesheet" href="./css/main.css" />
+<link rel="icon" href="./favicon.png" />
+
+- rel  : 현재문서와 외부문서와의 관계
+- href : 외부문서의 위치
+
+--------------------------------------------------------
+
+style
+- html 문서내부에 css를 작성할 떄 사용
+
+<style>
+  img {
+    width: 100%;
+    height: 200px;
+  }
+  p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+</style>
+
+--------------------------------------------------------
+
+script
+- js를 불러오기 위한 태그
+- 2가지 방식으로 사용
+
+<script src="./js/main.js"></script>
+- 외부의 js파일을 연결
+
+<script>
+  function onClick(event) {
+    console.log(event.target)
+  }
+  window.addEventListener("click", onClick)
+</script>
+- html 문서내부에 스크립트 파일을 직접 작성
+
+--------------------------------------------------------
