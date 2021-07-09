@@ -1,0 +1,8 @@
+- 외부 리소스를 연결할 떄 사용
+- 빈 태그 
+
+<link rel="stylesheet" type="text/css" href="./css/main.css" />
+<link rel="icon" type="img/png" href="./favicon.png" />
+
+- rel  : 현재문서와 외부 리소스와의 관계
+- href : 리소스의 URL

@@ -1,0 +1,15 @@
+- 문서에 포함된 상대 url의 기준 url 
+- 한 번만 작성
+- 사용을 지양하거나 주의해서 사용해야 함
+
+<base href="./css/" />
+=> ./ => ./css/
+
+<link rel="stylesheet" href="main.css" />
+=> ./css/main.css
+
+
+
+<base href="https://heropcode.github.io/GitHub-Responsive/" />
+<img src="img/bg-small.jpg" alt="샘플이미지1"/>
+<img src="img/bg-small.jpg" alt="샘플이미지2"/>

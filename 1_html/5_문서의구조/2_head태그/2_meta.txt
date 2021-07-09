@@ -1,0 +1,55 @@
+- 문서에 관한 정보를 검색엔진과 브라우져에 제공
+- 빈 태그 (attribute와 value를 설정)
+
+- name, http-equiv, property로 정보의 종류를 명시
+- content로 정보의 값을 명시
+
+--------------------------------------------------------------------------
+
+<meta charset="utf-8" />
+
+- 문서인코딩에 사용한 문자 인코딩
+
+--------------------------------------------------------------------------
+
+<meta name="author" content="홍길동" />
+<meta name="description" content="우리 사이트가 최고!" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+- 문서 레벨 메타데이터
+- viewport는 모바일에서만 적용(width, initial-scale, user-scalable)
+
+--------------------------------------------------------------------------
+
+- 프래그마 지시문(브라우져가 서버에 명령을 지시)
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+- 브라우져호환성 (익스플로러 고려)
+- http헤더의 이름을 값으로 가질 수 있다.
+
+
+<meta http-equiv="Cache-Control" content="no-cache" /> 
+<meta http-equiv="Pragma" content="no-cache" />
+- 페이지를 cache에서 가져오지 않게 하여 항상 서버에서 가져오게 함
+
+
+<meta http-equiv="Refresh" content="60" />
+<meta http-equiv="Refresh" content="5;url=주소" />
+- 새로고침이나 리다이렉트를 유도
+
+--------------------------------------------------------------------------
+
+- property를 사용하기도 한다.
+- seo와 연관이 깊다 (opengraph)
+
+<meta property="og:title" content="무료 체험단 이벤트에 참여하세요." />
+<meta
+  property="og:description"
+  content="지금 아래 링크를 통해서 무료로 제품을 신청하고 솔직한 리뷰를 들려주세요."
+/>
+<meta
+  property="og:image"
+  content={`${process.env.BASE_PATH}/img/event/experience-share.png`}
+/>
+
+--------------------------------------------------------------------------
