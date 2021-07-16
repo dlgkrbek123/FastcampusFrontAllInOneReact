@@ -1,0 +1,182 @@
+a (anchor)
+- 외부로 내보내기
+- 다른 url로 연결할 수 있는 하이퍼링크
+  (같은 페이지, 다른 페이지, 파일, 이메일주소, 전화번호)
+
+href      : 링크 url  
+target    : url의 표시 위치 ( _self, _blank )
+rel       : url과 현재문서와의 관계
+type      : url의 mime type
+download  : 요소가 리소스를 다운로드 하는 용도로 사용
+
+
+<a href="https://google.com" target="_blank" >구글</a>
+<a href="http://mygallery/img/sun.png" download="download" />
+
+- boolean 타입은 어트리뷰트명만 써도 적용
+
+
+
+- 같은 페이지 내 이동
+- #titl1을 주소창에 치면 바로 그 부분에서 시작 가능
+
+<ul>
+  <li><a href="#title1">제목1</a></li>
+  <li><a href="#title2">제목2</a></li>
+</ul>
+<h2 style="padding-bottom:300px;" id="title1">제목1</h2>
+<h2 style="padding-bottom:300px;" id="title2">제목2</h2>
+<h2 style="padding-bottom:300px;" id="title3">제목3</h2>
+
+------------------------------------------------
+
+abbr
+- 약어, title속성으로 상세설명을 쳐준다.
+- 호버하고 기다리면 title에 넣은 내용이 노출된다.
+- text-decoration이 underline dotted로 되어 있음
+
+Using <abbr title="HyperText Markup Language">HTML</abbr> is fun and easy
+
+------------------------------------------------
+
+em
+- 의미 강조
+- 중첩이 가능하며 될수록 의미가 강조됨
+- 정보 통신 보조기기에서 구두 강조로 발음됨
+- 이탤릭체(font-style)
+
+
+strong
+- 의미의 중요성
+- bold로 표시됨
+
+
+b
+- 문체가 다른 글자의 범위
+- 읽기 흐름에 도움을 준다.
+- 다른 태그가 적합하지 않으면 마지막 수단
+- bold로 표시됨
+
+
+i
+- 적합한 의미가 딱히없다면
+- 아이콘이나 특수기호를 위해 사용
+- 이탤릭체(font-style) 
+- font-awesome이랑 쓰면 좋아
+
+<i class="fas fa-bars"></i>
+
+
+mark
+- 하이라이팅
+- 형광펜
+
+------------------------------------------------
+
+dfn
+- 용어의 정의
+- 시맨틱한 태그일 뿐
+- 단어를 감싸라
+
+
+cite
+- 창작물에 대한 제목
+- 이탤릭체
+
+
+q
+- 짧은 인용문
+- 길면 <blockquote></blockquote>를 사용
+
+<q cite="http://www.naver.com">킹받네</a>
+
+
+u
+- 밑줄이 있는 글자 (text-decoration) 
+- 권장되지 않음
+
+------------------------------------------------
+
+code
+- 컴퓨터 코드범위를 설정
+- 모노스페이스로 표현된다.
+
+<code>document.getElementById('id-value')</code>
+
+code {
+  color: orange;
+  background: lightgray;
+  padding: 3px;
+  border: 1px solid
+}
+
+
+kbd
+- 키보드 입력을 나타내는 텍스트
+
+<p>
+  <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>K</kbd>
+</p>
+
+kbd {
+  padding: 0 3px;
+  border-top: 2px solid rgb(240, 240, 240);
+  border-bottom: 2px solid rgb(205, 205, 205, 205);
+  border-left: 2px solid rgb(210, 210, 210);
+  border-radius: 3px;
+}
+
+------------------------------------------------
+
+sup, sub
+- 위,아래 첨자
+- 바로 앞 텍스트에 붙는다.
+
+X<sup>4</sup> + Y<sup>2</sup>, H<sub>2</sub>0
+
+------------------------------------------------
+
+time
+- 날짜와 시간을 나타내기 위해 사용
+
+<time datetime="2018-07-07">July 7</time>
+
+------------------------------------------------
+
+span
+- div처럼 의미없는 콘텐츠
+- inline일 뿐
+
+- 텍스트 중간의 영역에 접근 가능
+
+<div>엄준식<span>짱짱맨</span></div>
+
+span {
+  color: blue;
+  font-size: 20px;
+}
+
+
+br (break)
+- 줄바꿈을 나타내는 빈 태그
+- 간격을 넓게 벌리기 위해 반복해서 쓰지말자 => line-height
+
+<br />
+
+------------------------------------------------
+
+del
+- 제거된 텍스트를 의미, 위키에서 많이 쓰임
+- text-decoration : line-through
+
+- cite     : 변경을 설명하는 리소스 url
+- datetime : 변경이 바생한 날짜
+
+<del>지워진 텍스트</del>
+
+
+ins
+- 새로 삽입된 텍스트
+- text-decoration : under-line
+
+<ins>새로 추가된 텍스트</ins>
