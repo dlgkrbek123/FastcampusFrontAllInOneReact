@@ -1,0 +1,16 @@
+canvas
+- 그래픽이나 애니메이션을 렌더링 (canvas, webgl)
+- js로 그림을 그린다.
+
+- 인라인 요소임
+- width와 height로 크기를 지정
+
+
+<canvas id="canvas" width="200" height="150"></canvas>
+<script>
+  const canvas = document.getElementById('canvas')
+  const ctx = canvas.getContext('2d')
+
+  ctx.fillStyle = 'rgb(200, 0, 0)'
+  ctx.fillRect(10, 10, 50, 50)
+</script>.

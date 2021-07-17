@@ -1,0 +1,12 @@
+audio
+- 소리 컨텐츠
+- js로 제어하면 완벽히 장악가능하다.
+
+
+- src      : 콘텐츠 url
+- preload  : 페이지 로드시 파일을 어느정도로 로드할지 결정
+- controls : 제어메뉴 표시
+
+- muted    : 음소거
+- autoplay : 준비되면 바로 재생
+- loop     : 반복재생

@@ -1,0 +1,13 @@
+video
+- 동영상 컨텐츠(mp4)
+
+- src           : 콘텐츠 url
+- preload       : 페이지 로드시 어느정도까지 파일을 로드할지
+- poster        : 썸네일 이미지 url
+- width, height : 크기
+
+
+- controls : 제어 메뉴
+- muted    : 음소거
+- loop     : 반복재생
+- autoplay : 자동재생
