@@ -1,0 +1,81 @@
+<caption>
+- 표의 제목
+- table당 하나의 caption만 사용가능
+
+
+<table>
+  <caption>데이터 타입과 값</caption>
+  <tr>
+    <th id="th-data" rowspan="2">데이터</th>
+    <th id="th-type" headers="th-data" abbr="Type" scope="row">타입</th>
+    <td headers="th-type">알파벳</th>
+    <td headers="th-type">숫자</th>
+  </tr>
+  <tr>
+    <th id="th-value" headers="th-data" abbr="Value" scope="row">값</th>
+    <td headers="th-value">A</td>
+    <td headers="th-value">7</td>
+  </tr>
+</table>
+
+------------------------------------------------------------
+
+<col>
+- 열 단위 그룹화
+
+<colgroup>
+- 연속된 col태그를 래핑
+- col들에 공통적으로 적용될 스타일을 넣을 수 있겠다.
+- 아래의 col에 span attribute를 지정해서 여러개의 컬럼을 묶어서 사용가능
+
+
+<table>
+  <caption>데이터 타입과 값</caption>
+  <tr>
+    <th></th>
+    <th>타입</th>
+    <th>값</th>
+  </tr>
+  <tr>
+   <th>1</td>
+   <td>알파벳</td>
+   <td>A</td>
+  </tr>
+  <tr>
+   <th>2</td>
+   <td>숫자</td>
+   <td>7</td>
+  </tr>
+</table>
+
+
+
+<table>
+  <caption>데이터 타입과 값</caption>
+  <col style="background-color: red;">
+  <col style="background-color: blue;>
+  <col style="background-color: gray;>
+  <tr>
+    <th></th>
+    <th>타입</th>
+    <th>값</th>
+  </tr>
+  <tr>
+   <th>1</td>
+   <td>알파벳</td>
+   <td>A</td>
+  </tr>
+  <tr>
+   <th>2</td>
+   <td>숫자</td>
+   <td>7</td>
+  </tr>
+</table>
+
+// 위의 마크업은 컬럼이 세 개
+
+------------------------------------------------------------
+
+thead, tbody, tfoot
+- 시맨틱하게 머리글, 본문. 바닥을 지정
+- 레이아웃에 영향을 주지 않는다.

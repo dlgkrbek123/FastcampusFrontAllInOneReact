@@ -1,0 +1,110 @@
+<table> : 테이블 래퍼
+- display가 table (block, inline이 아님)
+  => block과 유사
+
+
+<tr>    : 테이블 행
+- display가 table-row
+
+
+<th>    : 헤더 셀
+<td>    : 데이터 셀
+- display가 table-cell
+
+- display에 크게 신경쓰지 않아도 된다.
+- block과 비슷하다고 인식하자
+- css이전에는 레이아웃잡는게 어려워서 table로 레이아웃
+
+------------------------------------------------------------
+
+- 계층구조에 맞게 마크업해야 함
+
+<table>
+  <tr>
+    <th>타입</th>
+    <th>값</th>
+  </tr>
+  <tr>
+   <td>알파벳</td>
+   <td>A</td>
+  </tr>
+  <tr>
+    <td>숫자</td>
+    <td>7</td>
+  </tr>
+</table>
+<style>
+  table {
+    border-collapse: collapse; // td간의 간격을 없애준다.
+  }
+
+  th {
+    background-color: lightgray;
+  }
+
+  th, td {
+    border: 1px solid black;
+  }
+</style>
+
+------------------------------------------------------------
+
+<th>
+- abbr    : 열에 대한 설명
+- headers : 관련된 하나이상의 다른 th의 id
+- scope   : 테이블의 헤더가 왼쪽, 오른쪽에도 있을 수 있으니까 범위를 지정
+- colspan : 열의 몇 칸을 병합 (기본1)
+- rowspan : 행의 몇 칸을 병합 (기본1)
+
+<table>
+  <tr>
+    <th id="th-data" colspan="2">데이터</th>
+  </tr>
+  <tr>
+    <th abbr="Type" headers="th-data">타입</th>
+    <th abbr="Value" headers="th-data">값</th>
+  </tr>
+  <tr>
+   <td>알파벳</td>
+   <td>A</td>
+  </tr>
+  <tr>
+    <td>숫자</td>
+    <td>7</td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <th id="th-data" rowspan="2">데이터</th>
+    <th headers="th-data" abbr="Type" scope="row">타입</th>
+    <td>알파벳</th>
+    <td>숫자</th>
+  </tr>
+  <tr>
+    <th headers="th-data" abbr="Value" scope="row">값</th>
+    <td>A</td>
+    <td>7</td>
+  </tr>
+</table>
+
+------------------------------------------------------------
+
+<td>
+- 테이블의 일반 칸
+- rowspan, colsapn, headers 동일하게 사용가능
+
+<table>
+  <tr>
+    <th id="th-data" rowspan="2">데이터</th>
+    <th id="th-type" headers="th-data" abbr="Type" scope="row">타입</th>
+    <td headers="th-type">알파벳</th>
+    <td headers="th-type">숫자</th>
+  </tr>
+  <tr>
+    <th id="th-value" headers="th-data" abbr="Value" scope="row">값</th>
+    <td headers="th-value">A</td>
+    <td headers="th-value">7</td>
+  </tr>
+</table>
