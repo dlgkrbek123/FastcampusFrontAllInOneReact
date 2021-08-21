@@ -1,0 +1,16 @@
+절대경로
+- 웹서버의 도메인 루트에서의 탐색 경로
+- /로 시작함, 혹은 http부터 시작
+
+https://heropy.blog/assets/images/xxx.jpg
+/assets/images/xxx.jpg (도메인이 같으면 /만 쓰자)
+
+
+
+상대경로
+- 현재 파일 기반으로 탐색하는 경로
+- ./는 생략가능
+- 같은 파일인데 현재 파일에 따라 경로가 달라짐
+
+./images/xxx.jpg
+../assets/images/xxx.jpg
